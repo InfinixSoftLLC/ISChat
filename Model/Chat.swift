@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import ObjectMapper
 
-final class Chat: Mappable {
+public final class Chat {
     
     var id: Int?
     var userSenderID: Int?

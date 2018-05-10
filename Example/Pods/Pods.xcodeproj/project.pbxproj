@@ -88,6 +88,8 @@
 		8170866E2ACE0ACFBC6D90081354EC65 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44486D4DB989823442DC4F41407A9336 /* Stringers.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		83D2E1E65E0A2B10F57F2424FDCEDA3D /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD64E1CCF77D2557E76A7102D5CA2 /* HooksPhase.swift */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF76EE06934D8A8AC0A7205A589C3D6 /* UIKit.framework */; };
+		845D9B1120A4E614000DDB36 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9B0D20A4E3A3000DDB36 /* ConversationListViewController.swift */; };
+		845D9B1520A4E9E0000DDB36 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9B1220A4E62B000DDB36 /* ConversationTableViewCell.swift */; };
 		8B55BD430033027AD5FF22D630DD9F62 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = EA23EE0A80D318077C28121C5AD51D0D /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8BC8396F335036AB357C38BCF7C514F8 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 39007EAC9C06A13F1FC9101C4843B8ED /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FBC47DA706DBF982E54AA5ACC39EC9 /* Foundation.framework */; };
@@ -336,6 +338,10 @@
 		7E69E12E5F02A99AEC05DF8818E6B0E8 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48F5BB6E025E20C27A1371AFFB3E3D /* Pods-ISChat_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISChat_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		840FD64E1CCF77D2557E76A7102D5CA2 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
+		845D9B0D20A4E3A3000DDB36 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		845D9B0E20A4E3A3000DDB36 /* ConversationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationListViewController.xib; sourceTree = "<group>"; };
+		845D9B1220A4E62B000DDB36 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		845D9B1320A4E62B000DDB36 /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
 		84EB8F4C45D326DD09D76D00965878CE /* Pods_ISChat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISChat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8517C026666226429D963FA057C86021 /* Pods-ISChat_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISChat_Example-resources.sh"; sourceTree = "<group>"; };
 		8958E6A104616DC4782A7B97FDA3B19B /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
@@ -706,6 +712,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		845D9B0B20A4E380000DDB36 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				845D9B0C20A4E38A000DDB36 /* ConversationList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		845D9B0C20A4E38A000DDB36 /* ConversationList */ = {
+			isa = PBXGroup;
+			children = (
+				845D9B1020A4E531000DDB36 /* Cells */,
+				845D9B0D20A4E3A3000DDB36 /* ConversationListViewController.swift */,
+				845D9B0E20A4E3A3000DDB36 /* ConversationListViewController.xib */,
+			);
+			path = ConversationList;
+			sourceTree = "<group>";
+		};
+		845D9B1020A4E531000DDB36 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				845D9B1220A4E62B000DDB36 /* ConversationTableViewCell.swift */,
+				845D9B1320A4E62B000DDB36 /* ConversationTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		89B72677E07757978CEEFBF09E242937 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -796,6 +829,7 @@
 		EB47E74CB90CECA37FA3A2A0F86945A6 /* ISChat */ = {
 			isa = PBXGroup;
 			children = (
+				845D9B0B20A4E380000DDB36 /* Application */,
 				EDB3EA9B20A4E1E900EF5986 /* Model */,
 				A6DA3465C4F3249414E5AEF71743D7BB /* Pod */,
 				2CB86348D9D89464A559E05C0A74E49D /* Support Files */,
@@ -1290,8 +1324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF374C859F1178C673BB1E3E93A28797 /* ISChat-dummy.m in Sources */,
+				845D9B1120A4E614000DDB36 /* ConversationListViewController.swift in Sources */,
 				EDB3EA9F20A4E20900EF5986 /* Chat.swift in Sources */,
 				EDB3EA9D20A4E1FC00EF5986 /* Message.swift in Sources */,
+				845D9B1520A4E9E0000DDB36 /* ConversationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Message: Mappable {
+final class Message {
     
     var id: Int?
     var chatID: Int?
@@ -20,14 +20,14 @@ final class Message: Mappable {
     
 }
 
-final class LastMessage: Mappable {
+final class LastMessage {
     var message: Message?
     
-    required init?(map: Map) {
-        
-    }
-    
-    func mapping(map: Map) {
-        message <- map["message"]
-    }
+//    required init?(map: Map) {
+//        
+//    }
+//    
+//    func mapping(map: Map) {
+//        message <- map["message"]
+//    }
 }
