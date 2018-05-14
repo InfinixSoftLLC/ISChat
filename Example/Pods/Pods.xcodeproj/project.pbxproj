@@ -88,6 +88,9 @@
 		8170866E2ACE0ACFBC6D90081354EC65 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44486D4DB989823442DC4F41407A9336 /* Stringers.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		83D2E1E65E0A2B10F57F2424FDCEDA3D /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD64E1CCF77D2557E76A7102D5CA2 /* HooksPhase.swift */; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF76EE06934D8A8AC0A7205A589C3D6 /* UIKit.framework */; };
+		846DD1F020AA287E00BB25F1 /* ConversationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DD1EE20AA287E00BB25F1 /* ConversationDetailViewController.swift */; };
+		846DD1F820AA302300BB25F1 /* OtherMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DD1F620AA302300BB25F1 /* OtherMessageTableViewCell.swift */; };
+		846DD1FB20AA303A00BB25F1 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DD1F920AA303A00BB25F1 /* MyMessageTableViewCell.swift */; };
 		8B55BD430033027AD5FF22D630DD9F62 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = EA23EE0A80D318077C28121C5AD51D0D /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8BC8396F335036AB357C38BCF7C514F8 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 39007EAC9C06A13F1FC9101C4843B8ED /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FBC47DA706DBF982E54AA5ACC39EC9 /* Foundation.framework */; };
@@ -336,6 +339,13 @@
 		7E69E12E5F02A99AEC05DF8818E6B0E8 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48F5BB6E025E20C27A1371AFFB3E3D /* Pods-ISChat_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISChat_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		840FD64E1CCF77D2557E76A7102D5CA2 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
+		846DD1EE20AA287E00BB25F1 /* ConversationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationDetailViewController.swift; sourceTree = "<group>"; };
+		846DD1EF20AA287E00BB25F1 /* ConversationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationDetailViewController.xib; sourceTree = "<group>"; };
+		846DD1F120AA2D9900BB25F1 /* ChatAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatAssets.xcassets; sourceTree = "<group>"; };
+		846DD1F620AA302300BB25F1 /* OtherMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMessageTableViewCell.swift; sourceTree = "<group>"; };
+		846DD1F720AA302300BB25F1 /* OtherMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherMessageTableViewCell.xib; sourceTree = "<group>"; };
+		846DD1F920AA303A00BB25F1 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
+		846DD1FA20AA303A00BB25F1 /* MyMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMessageTableViewCell.xib; sourceTree = "<group>"; };
 		84EB8F4C45D326DD09D76D00965878CE /* Pods_ISChat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISChat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8517C026666226429D963FA057C86021 /* Pods-ISChat_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISChat_Example-resources.sh"; sourceTree = "<group>"; };
 		8958E6A104616DC4782A7B97FDA3B19B /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
@@ -706,6 +716,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		846DD1EC20AA281000BB25F1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				846DD1ED20AA282000BB25F1 /* Conversation Detail */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		846DD1ED20AA282000BB25F1 /* Conversation Detail */ = {
+			isa = PBXGroup;
+			children = (
+				846DD1F520AA300500BB25F1 /* Cell */,
+				846DD1EE20AA287E00BB25F1 /* ConversationDetailViewController.swift */,
+				846DD1EF20AA287E00BB25F1 /* ConversationDetailViewController.xib */,
+			);
+			path = "Conversation Detail";
+			sourceTree = "<group>";
+		};
+		846DD1F520AA300500BB25F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				846DD1F620AA302300BB25F1 /* OtherMessageTableViewCell.swift */,
+				846DD1F720AA302300BB25F1 /* OtherMessageTableViewCell.xib */,
+				846DD1F920AA303A00BB25F1 /* MyMessageTableViewCell.swift */,
+				846DD1FA20AA303A00BB25F1 /* MyMessageTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		89B72677E07757978CEEFBF09E242937 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -796,9 +835,11 @@
 		EB47E74CB90CECA37FA3A2A0F86945A6 /* ISChat */ = {
 			isa = PBXGroup;
 			children = (
+				846DD1EC20AA281000BB25F1 /* Application */,
 				EDB3EA9B20A4E1E900EF5986 /* Model */,
 				A6DA3465C4F3249414E5AEF71743D7BB /* Pod */,
 				2CB86348D9D89464A559E05C0A74E49D /* Support Files */,
+				846DD1F120AA2D9900BB25F1 /* ChatAssets.xcassets */,
 			);
 			name = ISChat;
 			path = ../..;
@@ -1265,13 +1306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846DD1F820AA302300BB25F1 /* OtherMessageTableViewCell.swift in Sources */,
 				506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */,
 				BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */,
+				846DD1F020AA287E00BB25F1 /* ConversationDetailViewController.swift in Sources */,
 				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
 				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
 				1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */,
 				094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */,
 				69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */,
+				846DD1FB20AA303A00BB25F1 /* MyMessageTableViewCell.swift in Sources */,
 				35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */,
 				756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */,
 			);
