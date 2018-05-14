@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Pods_ISChat_Example
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.present(ConversationListViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

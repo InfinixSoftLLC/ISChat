@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ISChat/Classes/**/*"
+  "source_files": "ISChat/Classes/**/*",
+  "resource_bundles": {
+    "ResourceBundleName": [
+      "./**/*.{xib,xcassets}"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }
