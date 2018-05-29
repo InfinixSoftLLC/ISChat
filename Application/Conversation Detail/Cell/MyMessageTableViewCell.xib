@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-ia-zPT">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-ia-zPT">
                         <rect key="frame" x="275" y="22" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="0QI-mn-ZeO"/>
@@ -28,19 +28,20 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bp-Uq-dP9">
-                        <rect key="frame" x="66" y="32" width="204" height="30"/>
+                        <rect key="frame" x="66" y="32" width="194" height="30"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.28627450980000002" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="w2F-kN-bSJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="2Bp-Uq-dP9" firstAttribute="bottom" secondItem="sXd-ia-zPT" secondAttribute="bottom" id="315-BT-ZsU"/>
                     <constraint firstItem="2Bp-Uq-dP9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="ATz-ll-7V5"/>
-                    <constraint firstItem="sXd-ia-zPT" firstAttribute="leading" secondItem="2Bp-Uq-dP9" secondAttribute="trailing" constant="5" id="Sb4-vJ-44w"/>
+                    <constraint firstItem="sXd-ia-zPT" firstAttribute="leading" secondItem="2Bp-Uq-dP9" secondAttribute="trailing" constant="15" id="Sb4-vJ-44w"/>
                     <constraint firstItem="sXd-ia-zPT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Slc-rZ-nC8"/>
                     <constraint firstAttribute="trailing" secondItem="sXd-ia-zPT" secondAttribute="trailing" constant="5" id="WAT-rg-WI8"/>
                 </constraints>
