@@ -8,26 +8,32 @@
 
 import Foundation
 
-final class Message: Mappable {
+final internal class Message: Codable {
     
-    var id: Int?
-    var chatID: Int?
-    var senderID: Int?
-    var receiverID: Int?
-    var receiverProfilePicture: String?
-    var mimeType: String?
-    var content: String?
+    var id                      : Int?
+    var chatID                  : Int?
+    var senderID                : Int?
+    var receiverID              : Int?
+    var receiverProfilePicture  : String?
+    var mimeType                : String?
+    var content                 : String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id                     = "id"
+        case chatID                 = "chat_id"
+        case senderID               = "sender_id"
+        case receiverID             = "receiver_id"
+        case receiverProfilePicture = "receiver_profile_picture"
+        case mimeType               = "mime_type"
+        case content                = "content"
+    }
     
 }
 
-final class LastMessage: Mappable {
+final internal class LastMessage: Codable {
     var message: Message?
     
-    required init?(map: Map) {
-        
-    }
-    
-    func mapping(map: Map) {
-        message <- map["message"]
+    enum CodingKeys: String, CodingKey {
+        case message = "message"
     }
 }
