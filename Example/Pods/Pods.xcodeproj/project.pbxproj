@@ -17,9 +17,7 @@
 		D662ECA91A7F77D4E755C65CEA8BB27E /* ISChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ED7B9CC838EBF932BB519F3093A045 /* ISChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D769291643CDA81EEAAA8623D4FEC714 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		DE95F9B15D84695618F700126291F7DD /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951A4F729AF7D1EC93FF88224B58F6E /* ConversationTableViewCell.swift */; };
-		EA4E604CD832943297701DB22F263B58 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60438176F8EEBBEED31432FB4BE93D7 /* Message.swift */; };
 		EC5058D67487EEED4476914487457A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		FA8D18F3E998F054041EE3B62F517F47 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D68E2ED630B6D7BEEEB41E9804F02 /* Chat.swift */; };
 		FCBFFC21A9968E0E0994ABC793067C7E /* ISChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E82BD18C84330AB23EBA33147B385 /* ISChat-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +61,6 @@
 		90ED7B9CC838EBF932BB519F3093A045 /* ISChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISChat-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F5E82BD18C84330AB23EBA33147B385 /* ISChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISChat-dummy.m"; sourceTree = "<group>"; };
-		AB8D68E2ED630B6D7BEEEB41E9804F02 /* Chat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		B60438176F8EEBBEED31432FB4BE93D7 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D09C02A774DB61E98EE725C3B3F82DC4 /* ISChat.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ISChat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D0A5C0DF6769DE5E79158C6C9E9BD868 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -158,8 +154,6 @@
 		5E5A52994C6F325BB90C5C2D737663C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB8D68E2ED630B6D7BEEEB41E9804F02 /* Chat.swift */,
-				B60438176F8EEBBEED31432FB4BE93D7 /* Message.swift */,
 			);
 			name = Model;
 			path = ISChat/Classes/Model;
@@ -378,12 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA8D18F3E998F054041EE3B62F517F47 /* Chat.swift in Sources */,
 				134CAA69FC98F46040DDA8ED083329BB /* ConversationListViewController.swift in Sources */,
 				DE95F9B15D84695618F700126291F7DD /* ConversationTableViewCell.swift in Sources */,
 				048268AF98AB6635D04CDD82C8A40CBE /* ConversationTableViewCell.xib in Sources */,
 				FCBFFC21A9968E0E0994ABC793067C7E /* ISChat-dummy.m in Sources */,
-				EA4E604CD832943297701DB22F263B58 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

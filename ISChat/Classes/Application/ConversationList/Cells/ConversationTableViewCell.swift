@@ -16,10 +16,6 @@ class ConversationTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
-//        self.profileImageView.clipsToBounds = YES;
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -11,7 +11,7 @@ open class ConversationListViewController: UIViewController, UITableViewDelegate
 
     @IBOutlet weak var tableView: UITableView!
     
-    var chats: [Chat] = []
+//    var chats: [Chat] = []
     private let reuseIdentifier = "ConversationCell"
     
     public init() {
@@ -28,9 +28,6 @@ open class ConversationListViewController: UIViewController, UITableViewDelegate
 
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let chat = Chat()
-        chats = [chat,chat,chat]
         
         let cellBundle = Bundle(for: ConversationTableViewCell.self)
         let nib = UINib(nibName: "ConversationTableViewCell", bundle: cellBundle)
