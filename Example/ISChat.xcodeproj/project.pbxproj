@@ -148,7 +148,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8D01975ADD6B73CCE9D102E6 /* [CP] Copy Pods Resources */,
+				660DD7A2C5CC6F7807F0A415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,22 +208,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D01975ADD6B73CCE9D102E6 /* [CP] Copy Pods Resources */ = {
+		660DD7A2C5CC6F7807F0A415 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ISChat_Example/Pods-ISChat_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ISChat/ResourceBundleName.bundle",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ISChat_Example/Pods-ISChat_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ISChat/ISChat.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ResourceBundleName.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISChat.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISChat_Example/Pods-ISChat_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISChat_Example/Pods-ISChat_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8E759960761EA7260D6F183 /* [CP] Check Pods Manifest.lock */ = {

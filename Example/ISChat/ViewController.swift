@@ -7,19 +7,17 @@
 //
 
 import UIKit
-import Pods_ISChat_Example
+import ISChat
 
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.present(ConversationListViewController(), animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func testBtnPress() {
+        let vc = ConversationListViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-
 }
 

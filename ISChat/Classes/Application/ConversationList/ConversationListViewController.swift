@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class ConversationListViewController: UIViewController {
+open class ConversationListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,14 +29,16 @@ open class ConversationListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let nib = UINib(nibName: "ConversationCell", bundle: nil)
+        let chat = Chat()
+        chats = [chat,chat,chat]
+        
+        let cellBundle = Bundle(for: ConversationTableViewCell.self)
+        let nib = UINib(nibName: "ConversationTableViewCell", bundle: cellBundle)
         self.tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
     }
-}
-
-extension ConversationListViewController : UITableViewDelegate, UITableViewDataSource {
+    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 80
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -28,4 +28,8 @@ class ConversationTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(name: String) {
+        completedNameLabel.text = name
+    }
+    
 }
