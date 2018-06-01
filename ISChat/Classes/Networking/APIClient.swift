@@ -8,7 +8,7 @@
 import Foundation
 
 public func testAPIClient() {
-    let client = APIClient(configuration: NetworkConfiguration(baseURL: "192.168.0.106:3000/api/v1"))
+    let client = APIClient(configuration: NetworkConfiguration(baseURL: "http://192.168.0.106:3000/api/v1"))
     client.getChats(
         onSuccess: { (chats: [Chat]) in
             print("Chats: \(chats.count)")
