@@ -20,16 +20,9 @@ DEPENDENCIES:
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - FBSnapshotTestCase
-    - Nimble
-    - Nimble-Snapshots
-    - Quick
-
 EXTERNAL SOURCES:
   ISChat:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
@@ -40,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: a3e95262125c472e8d15a7e91104094ea0fa766b
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0
