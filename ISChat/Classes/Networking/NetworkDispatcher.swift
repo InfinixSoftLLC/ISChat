@@ -44,6 +44,8 @@ internal struct NetworkDispatcher {
         
         do {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: request.params, options: [])
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
         } catch let error {
             onError(error)
             return
@@ -71,13 +73,19 @@ internal struct NetworkDispatcher {
                 do {
                     let decoder = JSONDecoder()
                     let result: T = try decoder.decode(T.self, from: data)
-                    onSuccess(result)
+                    DispatchQueue.main.async {
+                        onSuccess(result)
+                    }
                 } catch let error {
-                    onError(error)
+                    DispatchQueue.main.async {
+                        onError(error)
+                    }
                 }
             },
             onError: { (error: Error) in
-                onError(error)
+                DispatchQueue.main.async {
+                    onError(error)
+                }
             }
         )
     }

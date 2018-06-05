@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct NetworkConfiguration {
-    let baseURL                  : String
-    let getChatsEndpointURL      : String
-    let deleteChatEndpointURL    : String
-    let getMessagesEndpointURL   : String
-    let sendMessageEndpointURL   : String
-    let deleteMessageEndpointURL : String
+public struct NetworkConfiguration {
+    public let baseURL                  : String
+    public let getChatsEndpointURL      : String
+    public let deleteChatEndpointURL    : String
+    public let getMessagesEndpointURL   : String
+    public let sendMessageEndpointURL   : String
+    public let deleteMessageEndpointURL : String
     
-    init(
+    public init(
         baseURL                  : String                       ,
-        getChatsEndpointURL      : String = "/get_chats"        ,
+        getChatsEndpointURL      : String = "/get_conversation" ,
         deleteChatEndpointURL    : String = "/delete_chat"      ,
         getMessagesEndpointURL   : String = "/get_messages"     ,
         sendMessageEndpointURL   : String = "/send_message"     ,
