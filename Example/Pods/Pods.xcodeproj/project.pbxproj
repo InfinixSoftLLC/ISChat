@@ -16,6 +16,7 @@
 		585EC93B4DF4DE6C4FC5B43AC6349283 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00194FA5C2D828585A76214216522639 /* ConversationTableViewCell.swift */; };
 		68218324DE8F16C4095B7A111B71ED5D /* ConversationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059627DFE013B71C9DB81C8FE3F99B7 /* ConversationDetailViewController.swift */; };
 		778ABA14E052AEC2EB2FE5B5F2BC5569 /* OtherMessageTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 200DE12805EA659006B594E38789BBB0 /* OtherMessageTableViewCell.xib */; };
+		84CA0FE520C730BC00575049 /* ISChatAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA0FE420C730BC00575049 /* ISChatAsset.xcassets */; };
 		851DD2F6D55DCB45797C3BB8D481C9DB /* ConversationTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8301613935A68FDCDF372AEBDB47C104 /* ConversationTableViewCell.xib */; };
 		910A4D1E3647CE0481455A2B549F6BAD /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0925251F2CBA2D305216930364CAB8D /* ConversationListViewController.swift */; };
 		9DBFCE1FABD7303A150084A236014BD8 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590FA3C7B1823B663A26B9B5F08B38E /* NetworkConfiguration.swift */; };
@@ -52,7 +53,7 @@
 /* Begin PBXFileReference section */
 		00194FA5C2D828585A76214216522639 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 		0376C07219FAC5AB62C9DB2EBDB438E8 /* Pods-ISChat_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISChat_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		03D69FD2AEECDBA66FA630F63B04AFFF /* Pods_ISChat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISChat_Example.framework; path = "Pods-ISChat_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D69FD2AEECDBA66FA630F63B04AFFF /* Pods_ISChat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISChat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		057A9DBF9E1E56D0F6B81A64E65FADD6 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
 		060EE690630DE615EB3D03F4F077CBEF /* ISChat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISChat-prefix.pch"; sourceTree = "<group>"; };
 		11D5DAE36D82B76983E8525F86BA0FD6 /* OtherMessageTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OtherMessageTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,7 +61,7 @@
 		200DE12805EA659006B594E38789BBB0 /* OtherMessageTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OtherMessageTableViewCell.xib; sourceTree = "<group>"; };
 		225749CCD30D2BF90553900A2E854E25 /* Pods-ISChat_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISChat_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24902A6242F6AFC627B6159A8043C5D1 /* ISChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ISChat.modulemap; sourceTree = "<group>"; };
-		26FE28D16007537C311A691992824439 /* ISChat.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ISChat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		26FE28D16007537C311A691992824439 /* ISChat.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ISChat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29E7E67D1FBB2FF983CC92C35D7E05CF /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		2EDE9F0ED3697EC03BDB1D88D1538CAD /* ISChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISChat-dummy.m"; sourceTree = "<group>"; };
 		3059627DFE013B71C9DB81C8FE3F99B7 /* ConversationDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConversationDetailViewController.swift; sourceTree = "<group>"; };
@@ -70,22 +71,23 @@
 		5294A857452CB187E968F7340706AA27 /* ConversationDetailViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConversationDetailViewController.xib; sourceTree = "<group>"; };
 		5E5C33EC9F96012707DFC3F3DD23EEE4 /* Pods-ISChat_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISChat_Example-frameworks.sh"; sourceTree = "<group>"; };
 		62319EDCA3253FE9F92A1E9E46575D1C /* MyMessageTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MyMessageTableViewCell.xib; sourceTree = "<group>"; };
-		6550E476E3A86B30366DFB99E3217E19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6550E476E3A86B30366DFB99E3217E19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6EB9B607DCAA0859FF1D7511A5ECA9A4 /* Pods-ISChat_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISChat_Example-umbrella.h"; sourceTree = "<group>"; };
-		70458466DFC9BD46872FA345D2F14E05 /* ISChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISChat.framework; path = ISChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70458466DFC9BD46872FA345D2F14E05 /* ISChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FF3484C32A014597D57B476B9E2396 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7590FA3C7B1823B663A26B9B5F08B38E /* NetworkConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		8301613935A68FDCDF372AEBDB47C104 /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
 		831D39C68B3F24BEB0741D032A2F5371 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		84CA0FE420C730BC00575049 /* ISChatAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ISChatAsset.xcassets; sourceTree = "<group>"; };
 		90024973794FCEF2F420483C026FC586 /* Pods-ISChat_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISChat_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E0CBA04F637BF4F46F1282780E33ED4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0CBA04F637BF4F46F1282780E33ED4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B8536A3824C6BA6F165F4558FC91CE2D /* ResourceBundle-ResourceBundleName-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ResourceBundleName-Info.plist"; sourceTree = "<group>"; };
 		C5049C81918861B8EB303DF7C2901A05 /* ConversationListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConversationListViewController.xib; sourceTree = "<group>"; };
 		D571FA4B4F0127748C071D8BAEF8B358 /* ISChat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISChat.xcconfig; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DACD12C52B324DE2260625A8A5FA186A /* ResourceBundleName.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ResourceBundleName.bundle; path = "ISChat-ResourceBundleName.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACD12C52B324DE2260625A8A5FA186A /* ResourceBundleName.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourceBundleName.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB21844C51D4998FFC982AF9779F0EF8 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DF3FDC5C39F3E09FBDAEC4D213C65C72 /* Chat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		E0925251F2CBA2D305216930364CAB8D /* ConversationListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +131,6 @@
 				11D5DAE36D82B76983E8525F86BA0FD6 /* OtherMessageTableViewCell.swift */,
 				200DE12805EA659006B594E38789BBB0 /* OtherMessageTableViewCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -184,7 +185,6 @@
 				5294A857452CB187E968F7340706AA27 /* ConversationDetailViewController.xib */,
 				0F1B05A5DC1D9CEE1003ADD2EB01D29F /* Cell */,
 			);
-			name = "Conversation Detail";
 			path = "Conversation Detail";
 			sourceTree = "<group>";
 		};
@@ -233,7 +233,6 @@
 				00194FA5C2D828585A76214216522639 /* ConversationTableViewCell.swift */,
 				8301613935A68FDCDF372AEBDB47C104 /* ConversationTableViewCell.xib */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -264,6 +263,7 @@
 				8CD715B1A5ACC97348A75F1AA5B9EB81 /* Networking */,
 				1CC932727162DF83EF61470F21F69D8D /* Pod */,
 				BC80207C1554ED5C2D996079E7EA7C32 /* Support Files */,
+				84CA0FE420C730BC00575049 /* ISChatAsset.xcassets */,
 			);
 			name = ISChat;
 			path = ../..;
@@ -291,7 +291,6 @@
 				C5049C81918861B8EB303DF7C2901A05 /* ConversationListViewController.xib */,
 				9B3AF1C8A775346E7E916B59FC20D02A /* Cells */,
 			);
-			name = ConversationList;
 			path = ConversationList;
 			sourceTree = "<group>";
 		};
@@ -431,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA0FE520C730BC00575049 /* ISChatAsset.xcassets in Resources */,
 				FEBB5BC32252D2760C572300398368FA /* ResourceBundleName.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,7 +719,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ISChat/ISChat-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ISChat/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ISChat/ISChat.modulemap";
 				PRODUCT_MODULE_NAME = ISChat;
@@ -752,7 +752,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ISChat/ISChat-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ISChat/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ISChat/ISChat.modulemap";
 				PRODUCT_MODULE_NAME = ISChat;
