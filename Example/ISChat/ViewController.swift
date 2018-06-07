@@ -15,11 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        testAPIClient()
     }
     
     @IBAction func testBtnPress() {
-        let vc = ConversationListViewController()
+        
+        let configuration = NetworkConfiguration.init(baseURL: "http://admin.enjifit.com/api/v1")
+        
+        let vc = ConversationListViewController(configuration: configuration)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

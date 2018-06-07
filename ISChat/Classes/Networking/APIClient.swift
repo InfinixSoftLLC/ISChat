@@ -8,7 +8,7 @@
 import Foundation
 
 public func testAPIClient() {
-    let client = APIClient(configuration: NetworkConfiguration(baseURL: "http://192.168.0.106:3000/api/v1"))
+    let client = APIClient(configuration: NetworkConfiguration(baseURL: "http://enjifit.xanthops.com/api/v1"))
     client.getChats(
         onSuccess: { (chats: [Chat]) in
             print("Chats: \(chats.count)")
@@ -36,7 +36,10 @@ final internal class APIClient {
             request: Request(
                 path    : configuration.getChatsEndpointURL,
                 method  : .post,
-                params  : ["hola": true]
+                params  : [
+                "page" : 1,
+                "access_token" : "KUaWDQgW0IIWqKE0tvwMpllSWyRBGy1m2E9UwpE4m3+2YTajQbsy0Yghq+pCBxNpfq9HxPaT5agaXvPUG+6n0F7gI+JyZrVjqfpmGa7sYGIDBmtwXthqrmmsVqklbceZdHyCZA=="
+                ]
             ),
             onSuccess: { (chats: [Chat]) in
                 DispatchQueue.main.async {
