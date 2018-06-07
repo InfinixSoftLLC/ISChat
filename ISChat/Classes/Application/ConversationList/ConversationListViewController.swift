@@ -64,7 +64,13 @@ open class ConversationListViewController: UIViewController, UITableViewDelegate
             let conversationCell = cell as? ConversationTableViewCell
         else {return UITableViewCell()}
         
-        conversationCell.configure(name: chats[indexPath.row].userReceiverName ?? "No Handle")
+        let userReceiver = chats[indexPath.row].conversationUser
+        
+        let name = "\(userReceiver?.firstName ?? "No") \(userReceiver?.lastName ?? "Handle")"
+        
+        let urlImage = userReceiver?.profilePicture ?? ""
+        
+        conversationCell.configure(name: name, imageUrl: urlImage)
         return conversationCell
     }
     

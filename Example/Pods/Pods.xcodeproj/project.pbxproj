@@ -16,6 +16,7 @@
 		585EC93B4DF4DE6C4FC5B43AC6349283 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00194FA5C2D828585A76214216522639 /* ConversationTableViewCell.swift */; };
 		68218324DE8F16C4095B7A111B71ED5D /* ConversationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059627DFE013B71C9DB81C8FE3F99B7 /* ConversationDetailViewController.swift */; };
 		778ABA14E052AEC2EB2FE5B5F2BC5569 /* OtherMessageTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 200DE12805EA659006B594E38789BBB0 /* OtherMessageTableViewCell.xib */; };
+		84E0D42420C9CB1A00576751 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0D42320C9CB1A00576751 /* User.swift */; };
 		851DD2F6D55DCB45797C3BB8D481C9DB /* ConversationTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8301613935A68FDCDF372AEBDB47C104 /* ConversationTableViewCell.xib */; };
 		910A4D1E3647CE0481455A2B549F6BAD /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0925251F2CBA2D305216930364CAB8D /* ConversationListViewController.swift */; };
 		9DBFCE1FABD7303A150084A236014BD8 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590FA3C7B1823B663A26B9B5F08B38E /* NetworkConfiguration.swift */; };
@@ -77,6 +78,7 @@
 		7590FA3C7B1823B663A26B9B5F08B38E /* NetworkConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		8301613935A68FDCDF372AEBDB47C104 /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
 		831D39C68B3F24BEB0741D032A2F5371 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		84E0D42320C9CB1A00576751 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90024973794FCEF2F420483C026FC586 /* Pods-ISChat_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISChat_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0CBA04F637BF4F46F1282780E33ED4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				DF3FDC5C39F3E09FBDAEC4D213C65C72 /* Chat.swift */,
 				DB21844C51D4998FFC982AF9779F0EF8 /* Message.swift */,
+				84E0D42320C9CB1A00576751 /* User.swift */,
 			);
 			name = Model;
 			path = ISChat/Classes/Model;
@@ -453,6 +456,7 @@
 				910A4D1E3647CE0481455A2B549F6BAD /* ConversationListViewController.swift in Sources */,
 				B654AF2C44A008D0C608B8C07D127390 /* ConversationListViewController.xib in Sources */,
 				585EC93B4DF4DE6C4FC5B43AC6349283 /* ConversationTableViewCell.swift in Sources */,
+				84E0D42420C9CB1A00576751 /* User.swift in Sources */,
 				851DD2F6D55DCB45797C3BB8D481C9DB /* ConversationTableViewCell.xib in Sources */,
 				B2C1FF5D1EFA22AEE0DF701ECDF88331 /* ISChat-dummy.m in Sources */,
 				AD4CAC284513BF048EBCF095E226A572 /* Message.swift in Sources */,
