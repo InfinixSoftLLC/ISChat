@@ -24,6 +24,9 @@ open class ConversationListViewController: UIViewController, UITableViewDelegate
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        
+        
         let cellBundle = Bundle(for: ConversationTableViewCell.self)
         let nib = UINib(nibName: "ConversationTableViewCell", bundle: cellBundle)
         self.tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
@@ -78,4 +81,6 @@ open class ConversationListViewController: UIViewController, UITableViewDelegate
         let vc = ConversationDetailViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
+
 }
